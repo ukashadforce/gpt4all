@@ -31,3 +31,4 @@ jobs:
               await github.issues.createComment({...repo, issue_number: number, body: 'Issue closed as it does not have any labels or comments.'});
             }
           }
+            issues = issues.concat(result.data.fix);
